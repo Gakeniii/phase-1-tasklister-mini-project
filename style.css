@@ -7,24 +7,27 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(135deg, rgb(101, 3, 122, 0.7), rgb(174, 9, 100,0.7),rgba(0, 94, 255, 0.726)), url(bg.jpg);
+  background: linear-gradient(135deg, rgb(101, 3, 122, 0.7), rgb(174, 9, 100,0.7),rgba(0, 94, 255, 0.726)), url(./images/bg.jpg);
   background-size: cover;
 }
 .button {
   font-size: large;
   padding: 5px 5px 7px 5px;
   border-radius: 5px;
+  
 }
 .delete{
+  width: 30px;
   font-size: large;
   padding: 2px;
-  /* margin: 1em; */
+  margin: 0.3em;
   border-radius: 5px;
   border: none;
   background: rgb(239, 53, 53);
   color: #fff;
 }
 .edit{
+  width: 44px;
   font-size: large;
   padding:2px;
   border-radius: 5px;
@@ -46,7 +49,7 @@ body {
   border-radius: 10px;
   position: relative;
   margin:0 auto;
-  height: 850vh;
+  height: 120vh;
   justify-content: center;
   align-items: center;
   border: 1px solid #7f7e7e;
@@ -56,6 +59,7 @@ body {
   box-shadow: 2px 5px 5px #4a4949;
 }
 
+/* input  */
 label{
   width: 140px;
   display: inline-block;
@@ -63,6 +67,7 @@ label{
   margin: 0.2cm;
 }
 input[type = "text"]{
+  font-size: 400;
   width: 60%;
   padding: 8px;
   margin: 5px;
@@ -100,7 +105,6 @@ input#btn:hover{
 
 /* todo list box */
 #list {
-  
   justify-content: space-between;
   margin: 10px;
   border: 1px solid #333;
@@ -111,7 +115,7 @@ input#btn:hover{
 }
 
 /* added tasks */
-#div {
+div {
   background-color: transparent;
   border-radius: 8px;
   border: 1px solid rgb(27, 27, 27);
@@ -136,41 +140,41 @@ select{
 
 
 
- /* PRIORITIES COLOR */
- .red {
-  padding: 5px;
-  height: 30px;
-  outline: 1.5px solid rgb(227, 17, 17);
-  outline-offset: 1px;
-  box-shadow: 0 0 9px 9px rgb(190, 12, 12);
-  border-radius: 5px;
+/* PRIORITIES COLOR */
+.red {
+padding: 5px;
+height: 30px;
+outline: 1.5px solid rgb(227, 17, 17);
+outline-offset: 2px;
+box-shadow: 0 0 9px 9px rgb(173, 18, 18);
+border-radius: 5px;
+color: #000;
+font-weight: 500;
+}
+
+.yellow {
+padding: 5px;
+height: 30px;
+outline: 2px solid rgb(223, 227, 15);
+outline-offset: 2px;
+box-shadow: 0 0 9px 9px rgb(240, 204, 3);
+border-radius: 5px;
   color: #000;
-  font-weight: 500;
- }
+font-weight: 500;
+}
 
- .yellow {
-  padding: 5px;
-  height: 30px;
-  outline: 1.5px solid rgb(241, 245, 7);
-  outline-offset: 1px;
-  box-shadow: 0 0 9px 9px rgb(237, 222, 2);
-  border-radius: 5px;
-   color: #000;
-  font-weight: 500;
- }
+.green {
+padding: 5px;
+height: 30px;
+outline: 2px solid rgb(57, 199, 25);
+outline-offset: 2px;
+box-shadow: 0 0 9px 9px rgb(14, 156, 30);
+border-radius: 5px;
+color: #000;
+font-weight: 500;
+}
 
- .green {
-  padding: 5px;
-  height: 30px;
-  outline: 1.5px solid rgb(64, 224, 28);
-  outline-offset: 1px;
-  box-shadow: 0 0 9px 9px rgb(4, 175, 24);
-  border-radius: 5px;
-  color: #000;
-  font-weight: 500;
- }
-
- /*list elmnt */
- li{
-  margin-bottom: 24px;
- }
+/*list elmnt */
+li{
+margin-bottom: 24px;
+}

@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const li = document.createElement('li');
           li.dataset.id = task.id;
           li.className = getPriorityClass(task.priority);
-          li.innerText = `${task.description}  ${task.user} : ${task.duration} Due ${task.dueDate}`;
+          li.innerText = ` ${task.description}  ${task.user} : ${task.duration} : Due ${task.dueDate}  `;
 
           // Delete button
           const btnDelete = document.createElement('button');
